@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Subcontractor Prequalification Platforms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; background: #f4f4f5; color: #111827; }
+    header { background: #111827; color: white; padding: 24px; }
+    main { max-width: 900px; margin: 0 auto; padding: 24px; }
+    .hero-title { font-size: 2rem; margin-bottom: 8px; }
+    .hero-sub { font-size: 1rem; margin-bottom: 16px; }
+    .disclosure { background: #fef3c7; border: 1px solid #fcd34d; padding: 12px; margin: 16px 0; font-size: 0.9rem; }
+    .vendors { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 24px 0; }
+    .card { background: white; border-radius: 8px; padding: 16px; border: 1px solid #e5e7eb; }
+    .badge-featured { display: inline-block; background: #db2777; color: white; font-size: 0.75rem; padding: 4px 8px; border-radius: 999px; margin-bottom: 8px; }
+    .cta-button { display: inline-block; margin-top: 12px; padding: 10px 16px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-size: 0.9rem; }
+    .form-section { background: white; border-radius: 8px; padding: 16px; border: 1px solid #e5e7eb; margin-top: 24px; }
+    form { display: grid; gap: 12px; }
+    label { font-size: 0.9rem; font-weight: 500; }
+    input, textarea, select { padding: 8px; font-size: 0.9rem; border-radius: 4px; border: 1px solid #d1d5db; width: 100%; }
+    button { padding: 10px 16px; background: #16a34a; color: white; border: none; border-radius: 6px; font-size: 0.9rem; cursor: pointer; }
+    footer { font-size: 0.75rem; color: #6b7280; text-align: center; padding: 24px; }
+    @media (min-width: 768px) {
+      .hero-title { font-size: 2.5rem; }
+      .vendors { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="hero-title">Compare Subcontractor Prequalification Platforms</h1>
+    <p class="hero-sub">Learn about leading tools GCs and subs use to prequalify subcontractors in the US.</p>
+  </header>
+
+  <main>
+    <div class="disclosure">
+      This site is owned and operated by [Highwire], which offers one of the subcontractor prequalification platforms listed below.
+    </div>
+
+    <section>
+      <h2>Featured platform</h2>
+      <div class="vendors">
+        <article class="card">
+          <div class="badge-featured">Featured • Owned by [Highwire]</div>
+          <h3>[Highwire: Contractor Risk Management Software]</h3>
+          <p>Short description of your subcontractor prequalification platform. Who it’s for, key benefit in one sentence.</p>
+          <a href="#" class="cta-button">Book a demo</a>
+        </article>
+
+        <article class="card">
+          <h3>Competitor Platform A</h3>
+          <p>Placeholder description. This will eventually become a neutral overview of a competing platform.</p>
+          <a href="#" class="cta-button" style="background:#4b5563;">Learn more</a>
+        </article>
+
+        <article class="card">
+          <h3>Competitor Platform B</h3>
+          <p>Placeholder description for another prequalification tool.</p>
+          <a href="#" class="cta-button" style="background:#4b5563;">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Get platform recommendations</h2>
+      <p>Tell us a bit about your company and we’ll suggest which subcontractor prequalification platforms to look at.</p>
+      <form action="mailto:you@example.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" />
+        </div>
+        <div>
+          <label for="role">Role</label>
+          <input id="role" name="role" type="text" placeholder="GC, Sub, Owner, etc." />
+        </div>
+        <div>
+          <label for="evaluating">Are you currently evaluating platforms?</label>
+          <select id="evaluating" name="evaluating">
+            <option value="yes">Yes, currently evaluating</option>
+            <option value="soon">Not yet, but planning to</option>
+            <option value="no">No, just researching</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">What are you struggling with?</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> [Highwire]. This site may generate leads for [Highwire] when you submit this form.
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
