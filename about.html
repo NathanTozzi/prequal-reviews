@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About This Site | PrequalReviews</title>
+  <meta name="description" content="Learn about PrequalReviews, how we operate, our commitment to transparency, and our FTC-compliant review process." />
+  <style>
+    /* Reset & Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f9fafb;
+    }
+
+    /* Navigation */
+    nav {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    nav .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    nav a {
+      color: #6b7280;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #111827;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    .page-header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .page-header p {
+      font-size: 1.1rem;
+      color: #6b7280;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Content Section */
+    .content-section {
+      background: white;
+      border-radius: 12px;
+      padding: 48px;
+      margin: 48px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .content-section h2 {
+      font-size: 1.75rem;
+      color: #111827;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #3b82f6;
+    }
+
+    .content-section h3 {
+      font-size: 1.3rem;
+      color: #111827;
+      margin: 32px 0 16px;
+    }
+
+    .content-section p {
+      color: #374151;
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .content-section ul {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .content-section li {
+      color: #374151;
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+
+    .highlight-box {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 20px;
+      margin: 24px 0;
+      border-radius: 8px;
+    }
+
+    .highlight-box h3 {
+      color: #1e40af;
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      color: #1f2937;
+    }
+
+    .warning-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 20px;
+      margin: 24px 0;
+      border-radius: 8px;
+    }
+
+    .warning-box h3 {
+      color: #92400e;
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+    }
+
+    .warning-box p {
+      margin-bottom: 0;
+      color: #78350f;
+    }
+
+    .contact-card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 32px;
+      margin: 32px 0;
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .contact-card p {
+      margin-bottom: 12px;
+      color: #374151;
+    }
+
+    .contact-card a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 48px 24px 24px;
+      margin-top: 80px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .footer-section h4 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-section a {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-section a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 32px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 767px) {
+      nav ul {
+        gap: 16px;
+      }
+
+      nav a {
+        font-size: 0.8rem;
+      }
+
+      .page-header {
+        padding: 32px 24px;
+      }
+
+      .page-header h1 {
+        font-size: 1.75rem;
+      }
+
+      .content-section {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">PrequalReviews</a>
+      <ul>
+        <li><a href="/#platforms">Platforms</a></li>
+        <li><a href="/#guide">Buying Guide</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>About This Site</h1>
+    <p>Our commitment to transparency, honest reviews, and helping GCs find the right prequalification software</p>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="content-section">
+      <h2>Who We Are</h2>
+
+      <p>PrequalReviews is owned and operated by <strong>Highwire</strong>, a subcontractor prequalification and risk management platform for general contractors.</p>
+
+      <p>We created this site because we believe the construction industry deserves better resources for evaluating software—especially in the niche category of subcontractor prequalification. While sites like G2 and Capterra cover thousands of software categories, they often lack the construction-specific context that GCs, risk managers, and project teams need when making purchasing decisions.</p>
+
+      <div class="highlight-box">
+        <h3>Why We Built This</h3>
+        <p>We know this space intimately because we're in it. Our goal is to educate the market, provide genuine comparisons, and help you find the best platform for your needs—even if that platform isn't Highwire.</p>
+      </div>
+
+      <h2>Transparency & Disclosure</h2>
+
+      <p>We believe transparency builds trust. Here's what you need to know:</p>
+
+      <ul>
+        <li><strong>Highwire owns this site.</strong> This is not an "independent" third-party review site. Highwire is featured prominently on the homepage because we own it.</li>
+        <li><strong>We feature our competitors.</strong> You'll find other platforms listed here, including ISNetworld, Avetta, and others. We describe them fairly and accurately.</li>
+        <li><strong>We're FTC-compliant.</strong> All ownership and potential conflicts of interest are clearly disclosed throughout the site. We do not post fake reviews or misleading "rankings."</li>
+        <li><strong>This site generates leads for Highwire.</strong> When you fill out forms or request demos, Highwire's team may contact you. That's the business model—we're upfront about it.</li>
+      </ul>
+
+      <div class="warning-box">
+        <h3>FTC Compliance Notice</h3>
+        <p>In accordance with Federal Trade Commission guidelines on endorsements and reviews, we disclose that this site is owned by Highwire and may generate leads and revenue for Highwire. All reviews published on this site are from verified sources and are not fabricated or incentivized.</p>
+      </div>
+
+      <h2>How Reviews Work</h2>
+
+      <h3>Who Can Submit Reviews</h3>
+      <p>We accept reviews from verified users of prequalification platforms, including:</p>
+      <ul>
+        <li>General contractors and construction firm owners</li>
+        <li>Risk managers and safety directors</li>
+        <li>Project managers and operations teams</li>
+        <li>CFOs, finance teams, and procurement professionals</li>
+      </ul>
+
+      <h3>Our Review Verification Process</h3>
+      <p>All reviews go through a verification process before being published:</p>
+      <ol>
+        <li><strong>Submission:</strong> Users submit reviews via our review form, including their name, role, company, and platform experience.</li>
+        <li><strong>Verification:</strong> We validate that the reviewer is a real person at a real company. We may contact reviewers via email or LinkedIn to confirm their identity and experience.</li>
+        <li><strong>Moderation:</strong> Reviews are checked for compliance with our guidelines (no profanity, no spam, must be based on actual usage).</li>
+        <li><strong>Publication:</strong> Once verified, reviews are published with the reviewer's name, role, and company (unless they request anonymity for legitimate reasons).</li>
+      </ol>
+
+      <h3>Rating Criteria</h3>
+      <p>Platforms are rated on five key dimensions:</p>
+      <ul>
+        <li><strong>Ease of Use:</strong> How intuitive the platform is for both GC admins and subcontractors</li>
+        <li><strong>Implementation & Support:</strong> Onboarding speed and ongoing support quality</li>
+        <li><strong>Insurance & Compliance Features:</strong> Automation, accuracy, and reporting capabilities</li>
+        <li><strong>Integrations:</strong> Connectivity with existing ERP and project management tools</li>
+        <li><strong>Value for Money:</strong> Pricing transparency and ROI justification</li>
+      </ul>
+
+      <p>Ratings are calculated as the average of verified reviews in each category. Highwire's "Featured" status is based on ownership, not on inflated ratings.</p>
+
+      <h2>Editorial Independence</h2>
+
+      <p>While Highwire owns this site, we maintain editorial standards to ensure accuracy and fairness:</p>
+
+      <ul>
+        <li><strong>Competitor descriptions are factual.</strong> We describe other platforms based on publicly available information and verified user feedback.</li>
+        <li><strong>We don't fabricate negative reviews of competitors.</strong> All negative reviews (of any platform, including Highwire) must come from verified users.</li>
+        <li><strong>We don't suppress negative reviews of Highwire.</strong> If a verified user has a legitimate complaint about Highwire, we publish it.</li>
+        <li><strong>We prioritize helpfulness over sales.</strong> Our goal is to educate buyers so they make informed decisions, which builds long-term trust and credibility.</li>
+      </ul>
+
+      <h2>Contact & Dispute Resolution</h2>
+
+      <div class="contact-card">
+        <h3>Questions or Concerns?</h3>
+        <p>If you have questions about how this site works, want to submit a review, or need to dispute a rating or listing, please contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:reviews@highwire.com">reviews@highwire.com</a></p>
+        <p><strong>Business Address:</strong> [Your Highwire business address]</p>
+        <p>We respond to all inquiries within 2 business days.</p>
+      </div>
+
+      <h3>Dispute Process</h3>
+      <p>If you believe a review is inaccurate, fraudulent, or violates our guidelines:</p>
+      <ol>
+        <li>Email us at <a href="mailto:reviews@highwire.com">reviews@highwire.com</a> with the review URL and a detailed explanation of your concern.</li>
+        <li>We'll investigate within 5 business days and respond with our findings.</li>
+        <li>If the review is found to be fraudulent or in violation of our policies, we'll remove it.</li>
+        <li>If the review is legitimate but you disagree with it, you can submit a public response that will be published alongside the review.</li>
+      </ol>
+
+      <h2>Data & Privacy</h2>
+      <p>When you use this site or submit a form, we collect basic information (name, email, company, role). This data is used to:</p>
+      <ul>
+        <li>Verify your identity for review submissions</li>
+        <li>Provide personalized platform recommendations</li>
+        <li>Allow Highwire's team to follow up with relevant information or demo requests</li>
+      </ul>
+
+      <p>We do not sell your data to third parties. See our <a href="privacy.html" style="color: #3b82f6; font-weight: 500;">Privacy Policy</a> for full details.</p>
+
+      <h2>Future Plans</h2>
+      <p>We're committed to growing this resource over time. Planned improvements include:</p>
+      <ul>
+        <li>Expanding platform coverage (adding more competitors and niche tools)</li>
+        <li>Publishing detailed side-by-side comparison pages</li>
+        <li>Adding video demos and walkthroughs</li>
+        <li>Creating educational content on prequalification best practices</li>
+        <li>Building a community forum for GCs to share insights</li>
+      </ul>
+
+      <p>If you have suggestions for how we can improve this site, please reach out to <a href="mailto:reviews@highwire.com" style="color: #3b82f6; font-weight: 500;">reviews@highwire.com</a>.</p>
+
+      <div class="highlight-box" style="margin-top: 48px;">
+        <h3>Our Commitment</h3>
+        <p>We're here to educate, not just sell. By being transparent about our ownership and maintaining high editorial standards, we believe we can build a resource that genuinely helps GCs make better software decisions—even when that means recommending a competitor.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>PrequalReviews</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 8px;">
+          Independent reviews and comparisons of subcontractor prequalification platforms for GCs. Owned and operated by Highwire.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Platforms</h4>
+        <ul>
+          <li><a href="highwire.html">Highwire</a></li>
+          <li><a href="/#platforms">All Platforms</a></li>
+          <li><a href="/#guide">Buying Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About This Site</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/#lead-form">Get Recommendations</a></li>
+          <li><a href="submit-review.html">Submit a Review</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> PrequalReviews. Owned and operated by Highwire. This site may generate leads for Highwire when you submit forms or request demos.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
